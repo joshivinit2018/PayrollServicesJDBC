@@ -4,9 +4,9 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class EmployeePayrollData {
+    public static Double salary;
+    public String name;
     private int id;
-    private double salary;
-    private String name;
     private LocalDate startDate;
 
     public EmployeePayrollData(Integer id, String name, Double salary)
@@ -41,5 +41,4 @@ public class EmployeePayrollData {
         EmployeePayrollData that = (EmployeePayrollData) o;
         return id == that.id && Double.compare(that.salary, salary) == 0 && Objects.equals(name, that.name);
     }
-
 }
