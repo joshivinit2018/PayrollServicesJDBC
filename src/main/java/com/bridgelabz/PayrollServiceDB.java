@@ -21,7 +21,6 @@ public class PayrollServiceDB {
 
         ListDrivers();
         try {
-
             System.out.println("Connecting to database: " + jdbcURL);
             Connection connection = DriverManager.getConnection(jdbcURL, username, password);
             System.out.println("connection is successful!!!!"+connection);
